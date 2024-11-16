@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <div className="font-mono flex flex-col items-center justify-center p-8 gap-16 sm:p-20 font-sans ">
       <h1 className="text-6xl tracking-wide">Projects</h1>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="flex flex-col justify-between gap-6 grow md:flex-row">
         <div className="flex flex-col items-center">
           <a className="mb-5">Company Search</a>
           <iframe
