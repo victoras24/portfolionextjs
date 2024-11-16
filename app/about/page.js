@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className="font-mono flex flex-col p-8 sm:p-20 font-sans ">
+    <div className="font-mono flex flex-col p-8 sm:p-20">
       <h1 className="text-6xl text-center tracking-wide mb-16">About me</h1>
       <p className="mb-10">
         Hey, I’m Victoras, currently an accountant with a passion for technology
