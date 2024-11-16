@@ -15,6 +15,7 @@ export const About = () => {
         <li>Frontend: HTML, CSS, JavaScript, React</li>
         <li>Frameworks: Next.js, Tailwind CSS (in progress)</li>
         <li>Tools: Git, Firebase, Figma</li>
+        <li>Operating Systems: Linux(fedora), Windows, MacOs(currently)</li>
         <li>Future Goals: TypeScript, backend technologies, and more!</li>
       </ul>
       <h2 className="font-bold mb-4 text-lg">What I want to do:</h2>
