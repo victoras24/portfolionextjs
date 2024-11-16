@@ -1,8 +1,10 @@
+import Script from "next/script";
+
 export default function Projects() {
   return (
     <div className="font-mono flex flex-col items-center justify-center p-8 gap-16 sm:p-20 font-sans ">
       <h1 className="text-6xl tracking-wide">Projects</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full">
+      <div className="grid grid-cols-3 gap-6">
         <div className="flex flex-col items-center">
           <a className="mb-5">Company Search</a>
           <iframe
@@ -10,7 +12,10 @@ export default function Projects() {
             src="https://player.vimeo.com/video/1030112165?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             title="Company Search"
           ></iframe>
-          <script src="https://player.vimeo.com/api/player.js"></script>
+          <Script
+            src="https://player.vimeo.com/api/player.js"
+            strategy="afterInteractive" // Ensures the script loads after the page is interactive
+          />
         </div>
         <div className="flex flex-col items-center">
           <a className="mb-5">Eleni Sweets</a>
@@ -19,7 +24,10 @@ export default function Projects() {
             className="w-full h-[200px] border-none"
             title="Eleni Sweets"
           ></iframe>
-          <script src="https://player.vimeo.com/api/player.js"></script>
+          <Script
+            src="https://player.vimeo.com/api/player.js"
+            strategy="afterInteractive"
+          />
         </div>
         <div className="flex flex-col items-center">
           <a className="mb-5">Van Life</a>
@@ -28,7 +36,10 @@ export default function Projects() {
             title="Van Life"
             className="w-full h-[200px] border-none"
           ></iframe>
-          <script src="https://player.vimeo.com/api/player.js"></script>
+          <Script
+            src="https://player.vimeo.com/api/player.js"
+            strategy="afterInteractive"
+          />
         </div>
       </div>
     </div>

@@ -1,14 +1,18 @@
+import Script from "next/script";
+
 export default function Home() {
   return (
-    <div className="font-mono flex flex-col items-center justify-center p-8 font-sans">
-      <main className="flex flex-col  items-center text-center sm:text-left">
-        <h1 className="text-6xl tracking-wide mb-1">Victoras Isaakidis</h1>
-        <p className="text-sm leading-6 tracking-tight mb-16">
-          having fun building interesting web applications
+    <div className="font-mono flex flex-col items-center justify-center p-8">
+      <main className="flex flex-col items-center text-center sm:text-left">
+        <h1 className="text-6xl font-bold tracking-wide mb-2">
+          Victoras Isaakidis
+        </h1>
+        <p className="leading-6 tracking-tight mb-12">
+          Having fun building interesting web applications
         </p>
 
         <div className="w-full flex flex-col items-center justify-center">
-          <p>Latest project</p>
+          <p className="text-lg font-semibold mb-4">Latest Project</p>
           <iframe
             className="w-full h-[300px] mb-10"
             src="https://player.vimeo.com/video/1030112165?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -33,6 +37,11 @@ export default function Home() {
           </a>
         </div>
       </main>
+
+      <Script
+        src="https://player.vimeo.com/api/player.js"
+        strategy="afterInteractive"
+      />
     </div>
   );
 }
